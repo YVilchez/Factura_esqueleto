@@ -37,6 +37,7 @@ namespace Vista
             this.btaceptar = new System.Windows.Forms.Button();
             this.btcancelar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btver = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,6 +70,7 @@ namespace Vista
             // 
             this.tbcontra.Location = new System.Drawing.Point(342, 95);
             this.tbcontra.Name = "tbcontra";
+            this.tbcontra.PasswordChar = '*';
             this.tbcontra.Size = new System.Drawing.Size(302, 30);
             this.tbcontra.TabIndex = 3;
             // 
@@ -110,6 +112,15 @@ namespace Vista
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // btver
+            // 
+            this.btver.Image = ((System.Drawing.Image)(resources.GetObject("btver.Image")));
+            this.btver.Location = new System.Drawing.Point(244, 169);
+            this.btver.Name = "btver";
+            this.btver.Size = new System.Drawing.Size(58, 34);
+            this.btver.TabIndex = 7;
+            this.btver.UseVisualStyleBackColor = true;
+            // 
             // Login
             // 
             this.AcceptButton = this.btaceptar;
@@ -117,8 +128,9 @@ namespace Vista
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btcancelar;
-            this.ClientSize = new System.Drawing.Size(660, 237);
+            this.ClientSize = new System.Drawing.Size(846, 351);
             this.ControlBox = false;
+            this.Controls.Add(this.btver);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.btcancelar);
             this.Controls.Add(this.btaceptar);
@@ -128,7 +140,7 @@ namespace Vista
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
@@ -147,6 +159,7 @@ namespace Vista
         private System.Windows.Forms.Button btaceptar;
         private System.Windows.Forms.Button btcancelar;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button btver;
     }
 }
 
