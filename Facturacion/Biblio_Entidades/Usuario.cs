@@ -13,6 +13,12 @@ namespace Biblio_Entidades
         public string Contra { get; set; }
         public string Correo { get; set; }
         public string Rol { get; set; }
+
+        public byte[] Foto { get; set; }
+
+
+
+
         public DateTime FechaCreacion { get; set; }
         public bool EstadoActivo { get; set; }
 
@@ -20,16 +26,19 @@ namespace Biblio_Entidades
         public Usuario()
         {
         }
-        //Constructor todas entidades siempre
-        public Usuario(string codigoUsuario, string nombre, string contra, string correo, string rol, DateTime fechaCreacion, bool estadoActivo)
+
+        public Usuario(string codigoUsuario, string nombre, string contra, string correo, string rol, byte[] foto, DateTime fechaCreacion, bool estadoActivo)
         {
             this.codigoUsuario = codigoUsuario;
             Nombre = nombre;
             Contra = contra;
             Correo = correo;
             Rol = rol;
+            Foto = foto;
             FechaCreacion = fechaCreacion;
             EstadoActivo = estadoActivo;
         }
+        //Constructor todas entidades siempre
+
     }
 }
