@@ -1,7 +1,7 @@
 ﻿
 namespace Vista
 {
-    partial class Login
+    partial class Usuarioprincipal
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -29,7 +29,8 @@ namespace Vista
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Login));
+            this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Usuarioprincipal));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.tbusuario = new System.Windows.Forms.TextBox();
@@ -38,7 +39,9 @@ namespace Vista
             this.btcancelar = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btver = new System.Windows.Forms.Button();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -115,20 +118,25 @@ namespace Vista
             // btver
             // 
             this.btver.Image = ((System.Drawing.Image)(resources.GetObject("btver.Image")));
-            this.btver.Location = new System.Drawing.Point(244, 169);
+            this.btver.Location = new System.Drawing.Point(650, 95);
             this.btver.Name = "btver";
-            this.btver.Size = new System.Drawing.Size(58, 34);
+            this.btver.Size = new System.Drawing.Size(30, 30);
             this.btver.TabIndex = 7;
             this.btver.UseVisualStyleBackColor = true;
+            this.btver.Click += new System.EventHandler(this.btver_Click);
             // 
-            // Login
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
+            // Usuarios
             // 
             this.AcceptButton = this.btaceptar;
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.CancelButton = this.btcancelar;
-            this.ClientSize = new System.Drawing.Size(846, 351);
+            this.ClientSize = new System.Drawing.Size(725, 263);
             this.ControlBox = false;
             this.Controls.Add(this.btver);
             this.Controls.Add(this.pictureBox1);
@@ -141,10 +149,11 @@ namespace Vista
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Login";
+            this.Name = "Usuarios";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,6 +169,7 @@ namespace Vista
         private System.Windows.Forms.Button btcancelar;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button btver;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 

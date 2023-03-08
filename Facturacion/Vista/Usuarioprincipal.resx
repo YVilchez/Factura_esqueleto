@@ -255,16 +255,19 @@
   </data>
   <data name="btver.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
-        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
-        YQUAAAAJcEhZcwAAAG8AAABvAfGi3EMAAAAZdEVYdFNvZnR3YXJlAHd3dy5pbmtzY2FwZS5vcmeb7jwa
-        AAABs0lEQVQ4T6WTzyvDcRjHZ3FzMctBDqK0tZDMwWgYGzNTLu6cpFYOCoUUpRx24uY/wH4wmaa2stSm
-        SXbacqAUFz9jKX2et+fzrZX9KI3D+6nnx+f1/TzP8/mqAPxLRYNZsVGrVqAulsuqINCUglafEBvNMYob
-        o/RhClPGHKJzy5Fw245Rk1+f49SmMduYpBfdBV22xrFkjMLeFYHdHMKiJUgJW4Dehv1Y4OKyAoD2Rrjr
-        0vTakMQkB9QMMHREMWsKY44BbfLQ4AEm7H56HfGJzRxA5YNYq76lj9oUuqWvT2CmJUZf7VG64xZuuAXR
-        H8SyzNn96HJ46d3pEesKoOIZrsp7+tTcwioD9VfQ6S/oi28w33kGTW8Y2p4TTHMLZD2EUdY4/Ohzeijj
-        3INLVf5Iab7BqkxINSbhYsBD8ymqeIiPpggPkofHgGtrAEvZuhEvFkf3KP1ngPy6AvhLCwpgFwbnDmyK
-        U8oQHR7oh70Yz4IUI/XbGmUNr3GK15hxeMV2AUCq2EPqjGDMHBJb3EKKH1JmaB/TP8/kAKSKPOUnbsFn
-        CWJmIICG/PocJ19sSv+ZShNU3wx3uEKmf2UiAAAAAElFTkSuQmCC
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
+        bwAAAG8B8aLcQwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAGzSURBVDhPpZPP
+        K8NxGMdncXMxy0EOorS1kMzBaBgbM1Mu7pykVg4KhRSlHHbi5j/AfjCZpray1KZJdtpyoBQXP2MpfZ63
+        5/Otlf0ojcP7qefH5/X9PM/z+aoA/EtFg1mxUatWoC6Wy6og0JSCVp8QG80xihuj9GEKU8YconPLkXDb
+        jlGTX5/j1KYx25ikF90FXbbGsWSMwt4Vgd0cwqIlSAlbgN6G/Vjg4rICgPZGuOvS9NqQxCQH1AwwdEQx
+        awpjjgFt8tDgASbsfnod8YnNHEDlg1irvqWP2hS6pa9PYKYlRl/tUbrjFm64BdEfxLLM2f3ocnjp3ekR
+        6wqg4hmuynv61NzCKgP1V9DpL+iLbzDfeQZNbxjanhNMcwtkPYRR1jj86HN6KOPcg0tV/khpvsGqTEg1
+        JuFiwEPzKap4iI+mCA+Sh8eAa2sAS9m6ES8WR/co/WeA/LoC+EsLCmAXBucObIpTyhAdHuiHvRjPghQj
+        9dsaZQ2vcYrXmHF4xXYBQKrYQ+qMYMwcElvcQoofUmZoH9M/z+QApIo85SduwWcJYmYggIb8+hwnX2xK
+        /5lKE1TfDHe4QqZ/ZSIAAAAASUVORK5CYII=
 </value>
   </data>
+  <metadata name="errorProvider1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>

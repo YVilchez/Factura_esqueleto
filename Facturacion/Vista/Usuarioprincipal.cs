@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class Login : Form
+    public partial class Usuarioprincipal : Form
     {
-        public Login()
+        public Usuarioprincipal()
         {
             InitializeComponent();
         }
@@ -46,6 +46,27 @@ namespace Vista
                 return;
             }
             errorProvider1.Clear();
+            //Validad en BDD que el usuario y la contra sean existentes
+
+            //MOSTRAR MENU, se instanca un objeto
+            menu menuFormulario = new menu();
+            //
+            this.Hide();
+            menuFormulario.Show();
+
+
+        }
+        // ver contra
+        private void btver_Click(object sender, EventArgs e)
+        {
+            if (tbcontra.PasswordChar == '*')
+            {
+                tbcontra.PasswordChar = '\0';
+            }
+            else
+            {
+                tbcontra.PasswordChar = '*';
+            }
 
         }
     }
