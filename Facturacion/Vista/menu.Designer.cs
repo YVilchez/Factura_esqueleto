@@ -81,7 +81,7 @@ namespace Vista
             this.Toolusuarios.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Toolusuarios.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.Toolusuarios.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.Toolusuarios.SelectedTab = this.toolStripTabItem4;
+            this.Toolusuarios.SelectedTab = this.toolproducto;
             this.Toolusuarios.ShowRibbonDisplayOptionButton = true;
             this.Toolusuarios.Size = new System.Drawing.Size(886, 197);
             this.Toolusuarios.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -166,7 +166,7 @@ namespace Vista
             this.toolStripEx2.Office12Mode = false;
             this.toolStripEx2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx2.Size = new System.Drawing.Size(128, 92);
+            this.toolStripEx2.Size = new System.Drawing.Size(174, 92);
             this.toolStripEx2.TabIndex = 0;
             // 
             // toolproductos
@@ -258,7 +258,7 @@ namespace Vista
             this.toolStripEx4.Office12Mode = false;
             this.toolStripEx4.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx4.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx4.Size = new System.Drawing.Size(149, 92);
+            this.toolStripEx4.Size = new System.Drawing.Size(103, 92);
             this.toolStripEx4.TabIndex = 0;
             // 
             // toolfacturas

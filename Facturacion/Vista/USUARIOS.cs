@@ -161,5 +161,10 @@ namespace Vista
             }
 
         }
+
+        private void btteliminar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

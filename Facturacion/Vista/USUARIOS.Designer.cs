@@ -238,6 +238,7 @@ namespace Vista
             this.btteliminar.TabIndex = 18;
             this.btteliminar.Text = "ELIMINAR";
             this.btteliminar.UseVisualStyleBackColor = true;
+            this.btteliminar.Click += new System.EventHandler(this.btteliminar_Click);
             // 
             // btcancelar
             // 
@@ -253,11 +254,11 @@ namespace Vista
             // datausuarios
             // 
             this.datausuarios.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.datausuarios.Location = new System.Drawing.Point(0, 545);
+            this.datausuarios.Location = new System.Drawing.Point(1, 535);
             this.datausuarios.Name = "datausuarios";
             this.datausuarios.RowHeadersWidth = 62;
             this.datausuarios.RowTemplate.Height = 28;
-            this.datausuarios.Size = new System.Drawing.Size(1068, 150);
+            this.datausuarios.Size = new System.Drawing.Size(869, 118);
             this.datausuarios.TabIndex = 20;
             // 
             // errorProvider1
@@ -268,7 +269,7 @@ namespace Vista
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(856, 758);
+            this.ClientSize = new System.Drawing.Size(871, 655);
             this.Controls.Add(this.datausuarios);
             this.Controls.Add(this.btcancelar);
             this.Controls.Add(this.btteliminar);
