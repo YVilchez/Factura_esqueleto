@@ -164,5 +164,11 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Biblio_Entidades\Biblio_Entidades.csproj">
+      <Project>{1CC3D0CB-38A7-4F8A-93C1-8D56C3A85913}</Project>
+      <Name>Biblio_Entidades</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
