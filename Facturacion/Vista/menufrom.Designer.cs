@@ -1,7 +1,7 @@
 ﻿
 namespace Vista
 {
-    partial class menu
+    partial class menufrom
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace Vista
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menu));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(menufrom));
             this.Toolusuarios = new Syncfusion.Windows.Forms.Tools.RibbonControlAdv();
             this.toolStripTabItem1 = new Syncfusion.Windows.Forms.Tools.ToolStripTabItem();
             this.toolStripEx1 = new Syncfusion.Windows.Forms.Tools.ToolStripEx();

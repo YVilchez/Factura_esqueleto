@@ -106,11 +106,11 @@
     <Compile Include="UsuarioFrom.Designer.cs">
       <DependentUpon>UsuarioFrom.cs</DependentUpon>
     </Compile>
-    <Compile Include="menu.cs">
+    <Compile Include="menufrom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="menu.Designer.cs">
-      <DependentUpon>menu.cs</DependentUpon>
+    <Compile Include="menufrom.Designer.cs">
+      <DependentUpon>menufrom.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -126,8 +126,8 @@
     <EmbeddedResource Include="UsuarioFrom.resx">
       <DependentUpon>UsuarioFrom.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="menu.resx">
-      <DependentUpon>menu.cs</DependentUpon>
+    <EmbeddedResource Include="menufrom.resx">
+      <DependentUpon>menufrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

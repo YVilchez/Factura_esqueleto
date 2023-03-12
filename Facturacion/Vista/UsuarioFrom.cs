@@ -49,19 +49,38 @@ namespace Vista
             }
             errorProvider1.Clear();
 
-            //Validad en BDD que el usuario y la contra sean existentes
+            //Valida en BDD que el usuario y la contra sean existentes
             //=======================================================
 
             Login login = new Login(tbusuario.Text, tbcontra.Text);
             Usuario usuario = new Usuario();
             UsuarioBDD usuarioBDD = new UsuarioBDD();
 
+            usuario = usuarioBDD.Autenticar(login);
 
-            //MOSTRAR MENU, se instanca un objeto
-            menu menuFormulario = new menu();
-            //
-            this.Hide();
-            menuFormulario.Show();
+            if (usuario != null)
+            {
+                if (usuario.EstadoActivo)
+                {
+                    //Mostrar menu
+                    //MOSTRAR MENU, se instanca un objeto
+                    menufrom menuFormulario = new menufrom();
+                    //
+                    this.Hide();
+                    menuFormulario.Show();
+                }
+                else
+                {
+                    MessageBox.Show("ERROR", "El Usuario NO esta Activo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+               
+            }
+
+            else
+            {
+                MessageBox.Show("ERROR", "Datos de Usuario incorrecto", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+
 
 
         }
