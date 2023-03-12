@@ -12,7 +12,7 @@ namespace Biblio_Entidades
         public string Nombre { get; set; }
         public string Contra { get; set; }
         public string Correo { get; set; }
-        public string Rol { get; set; }
+        
 
         public byte[] Foto { get; set; }
 
@@ -27,13 +27,13 @@ namespace Biblio_Entidades
         {
         }
 
-        public Usuario(string codigoUsuario, string nombre, string contra, string correo, string rol, byte[] foto, DateTime fechaCreacion, bool estadoActivo)
+        public Usuario(string codigoUsuario, string nombre, string contra, string correo,byte[] foto, DateTime fechaCreacion, bool estadoActivo)
         {
             this.codigoUsuario = codigoUsuario;
             Nombre = nombre;
             Contra = contra;
             Correo = correo;
-            Rol = rol;
+           
             Foto = foto;
             FechaCreacion = fechaCreacion;
             EstadoActivo = estadoActivo;

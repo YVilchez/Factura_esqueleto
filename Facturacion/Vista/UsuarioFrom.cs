@@ -1,4 +1,6 @@
-﻿using System;
+﻿using Biblio_Datos;
+using Biblio_Entidades;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +12,9 @@ using System.Windows.Forms;
 
 namespace Vista
 {
-    public partial class Usuarioprincipal : Form
+    public partial class UsuarioFrom : Form
     {
-        public Usuarioprincipal()
+        public UsuarioFrom()
         {
             InitializeComponent();
         }
@@ -39,14 +41,21 @@ namespace Vista
             // (tbcontra.Text == "") 
             if (string.IsNullOrEmpty(tbcontra.Text))
             {
-                errorProvider1.SetError(tbcontra, "Ingrese la contrasena");
+                errorProvider1.SetError(tbcontra,"Ingrese la contrasena");
                 //contra incorrecta
                 tbcontra.Clear();
                 tbcontra.Focus();
                 return;
             }
             errorProvider1.Clear();
+
             //Validad en BDD que el usuario y la contra sean existentes
+            //=======================================================
+
+            Login login = new Login(tbusuario.Text, tbcontra.Text);
+            Usuario usuario = new Usuario();
+            UsuarioBDD usuarioBDD = new UsuarioBDD();
+
 
             //MOSTRAR MENU, se instanca un objeto
             menu menuFormulario = new menu();

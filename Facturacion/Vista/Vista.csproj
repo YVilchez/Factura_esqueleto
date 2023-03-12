@@ -100,11 +100,11 @@
     <Compile Include="PRODUCTOS.Designer.cs">
       <DependentUpon>PRODUCTOS.cs</DependentUpon>
     </Compile>
-    <Compile Include="Usuarioprincipal.cs">
+    <Compile Include="UsuarioFrom.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Usuarioprincipal.Designer.cs">
-      <DependentUpon>Usuarioprincipal.cs</DependentUpon>
+    <Compile Include="UsuarioFrom.Designer.cs">
+      <DependentUpon>UsuarioFrom.cs</DependentUpon>
     </Compile>
     <Compile Include="menu.cs">
       <SubType>Form</SubType>
@@ -123,8 +123,8 @@
     <EmbeddedResource Include="PRODUCTOS.resx">
       <DependentUpon>PRODUCTOS.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Usuarioprincipal.resx">
-      <DependentUpon>Usuarioprincipal.cs</DependentUpon>
+    <EmbeddedResource Include="UsuarioFrom.resx">
+      <DependentUpon>UsuarioFrom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="menu.resx">
       <DependentUpon>menu.cs</DependentUpon>
@@ -168,6 +168,10 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Biblio_Datos\Biblio_Datos.csproj">
+      <Project>{92B61668-897D-480C-A301-2C481E15A720}</Project>
+      <Name>Biblio_Datos</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Biblio_Entidades\Biblio_Entidades.csproj">
       <Project>{1CC3D0CB-38A7-4F8A-93C1-8D56C3A85913}</Project>
       <Name>Biblio_Entidades</Name>

@@ -21,5 +21,9 @@
             Contra = contra;
             Rol = rol;
         }
+
+        public Login(string text1, string text2)
+        {
+        }
     }
 }
