@@ -73,6 +73,7 @@ namespace Vista
             this.tbcodigo.Name = "tbcodigo";
             this.tbcodigo.Size = new System.Drawing.Size(438, 30);
             this.tbcodigo.TabIndex = 1;
+            this.tbcodigo.TextChanged += new System.EventHandler(this.tbcodigo_TextChanged);
             // 
             // label2
             // 

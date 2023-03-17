@@ -1,13 +1,6 @@
 ﻿using Biblio_Datos;
 using Biblio_Entidades;
 using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Vista
@@ -43,7 +36,7 @@ namespace Vista
             {
                 errorProvider1.SetError(tbcontra,"Ingrese la contrasena");
                 //contra incorrecta
-                tbcontra.Clear();
+                
                 tbcontra.Focus();
                 return;
             }
@@ -64,11 +57,11 @@ namespace Vista
                 {
                     //Mostrar menu
                     //MOSTRAR MENU, se instanca un objeto
-                    menufrom menuFormulario = new menufrom();
-                    //
-                    this.Hide();
-                    menuFormulario.Show();
-                }
+                  menufrom menuFormulario = new menufrom();
+                 
+                 Hide();
+                 menuFormulario.Show();
+                 }
                 else
                 {
                     MessageBox.Show("ERROR", "El Usuario NO esta Activo", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -95,6 +88,10 @@ namespace Vista
             {
                 tbcontra.PasswordChar = '*';
             }
+
+        }
+        private void Login_Load(object sender, EventArgs e)
+        {
 
         }
     }

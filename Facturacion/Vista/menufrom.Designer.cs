@@ -81,7 +81,7 @@ namespace Vista
             this.Toolusuarios.QuickPanelImageLayout = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.Toolusuarios.RibbonHeaderImage = Syncfusion.Windows.Forms.Tools.RibbonHeaderImage.None;
             this.Toolusuarios.RibbonStyle = Syncfusion.Windows.Forms.Tools.RibbonStyle.Office2016;
-            this.Toolusuarios.SelectedTab = this.toolproducto;
+            this.Toolusuarios.SelectedTab = this.toolStripTabItem3;
             this.Toolusuarios.ShowRibbonDisplayOptionButton = true;
             this.Toolusuarios.Size = new System.Drawing.Size(886, 197);
             this.Toolusuarios.SystemText.QuickAccessDialogDropDownName = "Start menu";
@@ -166,7 +166,7 @@ namespace Vista
             this.toolStripEx2.Office12Mode = false;
             this.toolStripEx2.Padding = new System.Windows.Forms.Padding(3, 0, 0, 0);
             this.toolStripEx2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.toolStripEx2.Size = new System.Drawing.Size(174, 92);
+            this.toolStripEx2.Size = new System.Drawing.Size(128, 92);
             this.toolStripEx2.TabIndex = 0;
             // 
             // toolproductos
@@ -272,14 +272,14 @@ namespace Vista
             this.toolfacturas.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageAboveText;
             this.toolfacturas.Click += new System.EventHandler(this.toolfacturas_Click);
             // 
-            // menu
+            // menufrom
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(886, 557);
             this.Controls.Add(this.Toolusuarios);
             this.IsMdiContainer = true;
-            this.Name = "menu";
+            this.Name = "menufrom";
             this.Text = "menu";
             this.Load += new System.EventHandler(this.menu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.Toolusuarios)).EndInit();

@@ -115,7 +115,7 @@ namespace Vista
                 //llamar a clase usuario datos
                 Usuario user = new Usuario();
 
-                user.codigoUsuario = tbcodigo.Text;
+                user.CodigoUsuario = tbcodigo.Text;
                 user.Nombre = tbnombre.Text;
                 user.Contra = tbcontrase.Text;
                 user.Correo = tbcorreo.Text;
@@ -163,6 +163,11 @@ namespace Vista
         }
 
         private void btteliminar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbcodigo_TextChanged(object sender, EventArgs e)
         {
 
         }

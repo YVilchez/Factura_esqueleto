@@ -5,13 +5,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MySql.Data.MySqlClient;
+using System.Data;
 
 namespace Biblio_Datos
 {
    public class UsuarioBDD
     {
         //Cadena de conexion BDD servidor 
-        string cadena = "server=loclhost; user=root; database=factura; password=1234";
+       readonly string cadena = "server=localhost; user=root; database=factura; password=1234;";
         //MEtodos para interactuar
 
         public Usuario Autenticar(Login login)
@@ -40,12 +41,16 @@ namespace Biblio_Datos
                         if (dr.Read())
                         {
                             user = new Usuario();
-                            user.codigoUsuario = dr["CodigoUsuario"].ToString();
+                            user.CodigoUsuario = dr["CodigoUsuario"].ToString();
                             user.Nombre = dr["Nombre"].ToString();
                             user.Contra = dr["Contrase"].ToString();
                             user.Correo = dr["Correo"].ToString();
-                            
-                            user.Foto = (byte[])dr["Foto"];
+                            user.Rol = dr["Rol"].ToString();
+                            //if (dr["Foto"].GetType() != typeof(DBNull))
+                            //{
+                                user.Foto = (byte[])dr["Foto"];
+                            //}
+
                             user.FechaCreacion = Convert.ToDateTime(dr["FechaCreacion"]);
                             user.EstadoActivo = Convert.ToBoolean(dr["EstadoActivo"]);
 

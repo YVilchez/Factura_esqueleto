@@ -6,7 +6,7 @@
         public string CodigoUsuario { get; set; }
         public string Contra { get; set; }
        //Administrador / Usuario
-        public string Rol { get; set; }
+        //public string Rol { get; set; }
 
 
         //Desarmador, generar construcctor, quitar seleciones
@@ -19,7 +19,7 @@
         {
             CodigoUsuario = codigoUsuario;
             Contra = contra;
-            Rol = rol;
+           // Rol = rol;
         }
 
         public Login(string text1, string text2)
